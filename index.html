@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Showcase 3D Effect with CSS, HTML, Swiper">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- Fonts -->
+   
+   <!-- Animate.Css -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+   
+   <!-- slick -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   
+   <!-- main css styles -->
+   <link rel="stylesheet" href="assets/css/style.min.css">
+   
+   <title>main</title>
+   
+   
+</head>
+<body>
+   
+   <header class="header">
+         <div class="header__left-nav">
+               <button class="header__menu-btn">
+                     <span></span>
+               </button>
+         
+               <a class="header__logo" href="#" title="Главная страница YouTube">
+                     <img class="header__logo-img" src="assets/images/header/logo-white.png" alt="youtube">
+               </a>
+               <a class="header__logo-mobile" href="#" title="Главная страница YouTube">
+                     <img class="header__logo-img" src="assets/images/header/logo-unword.png" alt="youtube">
+               </a>
+         
+               <div class="header__search-wrapper">
+                     <input class="header__search" type="search" placeholder="Search">
+                     <button class="header__search-btn">
+                           <svg class="search-icon">
+                             <use href="assets/images/symbol/sprite.svg#search"></use>
+                           </svg>
+                     </button>
+               </div>
+   
+               <button class="header__voice-search" title="Голосовой поиск">
+                     <svg class="header__voice-search_icon">
+                       <use href="assets/images/symbol/sprite.svg#voice"></use>
+                     </svg>
+               </button>
+         </div>
+   
+         <div class="header__right-pannel right-pannel">
+               <a class="right-pannel__studio" href="#" title="Создать">
+                     <svg class="video-icon">
+                           <use href="assets/images/symbol/sprite.svg#video"></use>
+                     </svg>
+               </a>
+           
+               <a class="right-pannel__notifications" href="#" title="Уведомления">
+                     <svg class="notification-icon">
+                           <use href="assets/images/symbol/sprite.svg#notification"></use>
+                           <span class="notification-count"></span>
+                     </svg>
+               </a>
+               <a class="right-pannel__user" href="#" title="Аккаунт пользователя">
+                     <img class="right-pannel__user-img" src="assets/images/header/avatar.png" alt="user-photo">
+               </a>
+   
+               <div class="right-pannel__modal modal">
+                     <a class="modal__user" href="#">
+                           Аккаунт пользователя
+                     </a>
+                     <a class="modal__studio" href="#" title="Создать">
+                           Мастерская
+                     </a>
+                     <a class="modal__notifications" href="#" title="Уведомления">
+                           Уведомления
+                           <span class="notification-count"></span>
+                     </a>
+               </div>
+         </div>
+   </header>
+   
+   <aside class="aside">
+         <nav class="aside__menu">
+               <ul class="aside__list">
+                     <li class="aside__item">
+                           <a href="#" class="aside__link">
+                                 <svg class="aside-icon">
+                                   <use href="assets/images/symbol/sprite.svg#home"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Home
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="#" class="aside__link">
+                                 <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#trending"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Tranding
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="#" class="aside__link">
+                                  <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#subscriptions"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Subscriptions
+                                 </p>
+                            </a>
+                     </li>
+               </ul>
+   
+               <ul class="aside__list">
+                     <li class="aside__item">
+                           <a href="#" class="aside__link">
+                                 <svg class="aside-icon">
+                                   <use href="assets/images/symbol/sprite.svg#library"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Library
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="#" class="aside__link">
+                                 <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#history"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       History
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="" class="aside__link">
+                                 <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#watch"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Watch later
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="" class="aside__link">
+                                 <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#favourites"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Favorites
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="" class="aside__link">
+                                 <svg class="aside-icon">
+                                   <use href="assets/images/symbol/sprite.svg#like"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Liked video
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="" class="aside__link">
+                                 <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#music"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Music
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="" class="aside__link">
+                                 <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#games"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Games
+                                 </p>
+                           </a>
+                     </li>
+                     <li class="aside__item">
+                           <a href="" class="aside__link">
+                                 <svg class="aside-icon">
+                                       <use href="assets/images/symbol/sprite.svg#chevron-down"></use>
+                                 </svg>
+                                 <p class="aside__text">
+                                       Show more
+                                 </p>
+                           </a>
+                     </li>
+               </ul>
+   
+               <ul class="aside__list subscriptions">
+                     <h3 class="subscriptions__title">
+                           Subscriptions
+                     </h3>
+                     <li class="subscriptions__item">
+                           <a href="#" class="subscriptions__link">
+                                 <img class="subscriptions__img"  src="assets/images/aside-menu/subscriber-photo01.png" alt="subscriber-photo">
+                                 <span class="subscriptions__name">Gussie Singleton</span>
+                           </a>
+                     </li>
+                     <li class="subscriptions__item">
+                           <a class="subscriptions__link" href="#">
+                                 <img class="subscriptions__img" src="assets/images/aside-menu/subscriber-photo02.png" alt="">
+                                 <span class="subscriptions__name">Nora Francis</span>
+                           </a>
+                     </li>
+                     <li class="subscriptions__item">
+                           <a href="#" class="subscriptions__link">
+                                 <img class="subscriptions__img" src="assets/images/aside-menu/subscriber-photo03.png" alt="">
+                                 <span class="subscriptions__name">Belle Briggs</span>
+                           </a>
+                     </li>
+                     <li class="subscriptions__item">
+                           <a href="#" class="subscriptions__link">
+                                 <img class="subscriptions__img" src="assets/images/aside-menu/subscriber-photo04.png" alt="">
+                                 <span class="subscriptions__name">Eunice Cortez</span>
+                           </a>
+                     </li>
+                     <li class="subscriptions__item">
+                           <a href="#" class="subscriptions__link">
+                                 <img class="subscriptions__img" src="assets/images/aside-menu/subscriber-photo05.png" alt="">
+                                 <span class="subscriptions__name">Emma Hanson</span>
+                           </a>
+                     </li>
+                     <li class="subscriptions__item">
+                           <a href="#" class="subscriptions__link">
+                                 <img class="subscriptions__img" src="assets/images/aside-menu/subscriber-photo06.png" alt="">
+                                 <span class="subscriptions__name">Leah Berry</span>
+                           </a>
+                     </li>
+               </ul>
+   
+               <a class="aside__settings" href="#">
+                     <svg class="aside-icon">
+                       <use href="assets/images/symbol/sprite.svg#setting"></use>
+                     </svg>
+                     <p class="aside__text">
+                           Settings
+                     </p>
+               </a>
+         </nav>
+   
+   </aside>
+   
+   <main class="main">
+         <div class="channel">
+               <div class="channel__head">
+                     <img class="channel__img" src="assets/images/aside-menu/subscriber-photo01.png" alt="">
+                     <a class="channel__link" href="#">
+                           <p class="channel__name">
+                                 Dollie Blair
+                           </p>
+                     </a>
+               </div>
+               
+               <div class="channel__slider">
+         
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/01.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 A Brief History Of Creation
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       33k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       22 days ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+                     
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/02.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 Selecting The Right Hotel
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       23k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       3 days ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+         
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/03.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 Asteroids
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       11k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       11 days ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+         
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/04.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 Telescopes 101
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       233k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       1 month ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+         
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/05.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 Medical Care Is Just
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       33k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       22 days ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+         
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/06.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 Moon Gazing
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       3k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       2 days ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+         
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/01.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 A Brief History Of Creation
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       33k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       22 days ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+         
+                     <div class="channel__slide">
+                           <div class="channel__slide_image">
+                                 <img class="channel__slide_img" src="assets/images/main/channel/03.jpg" alt="">
+                           </div>
+                           <h4 class="channel__slide_title">
+                                 Asteroids
+                           </h4>
+                           <div class="channel__slide_info">
+                                 <span class="channel__slide_views">
+                                       11k views
+                                 </span>
+                                 <span class="channel__slide_release">
+                                       11 days ago
+                                 </span>
+                                 <span class="channel__slide_name">
+                                       Dollie Blair
+                                 </span>
+                           </div>
+                     </div>
+               </div>      
+         </div>
+         <div class="recommended">
+               <div class="recommended__head">
+                     <p class="recommended__name">
+                           Recommended
+                     </p>
+               </div>
+               
+               <div class="recommended__slider">
+                     <div class="recommended__slide">
+                           <div class="recommended__slide_image">
+                                 <img class="recommended__slide_img" src="assets/images/main/recommended-videos/01.jpg" alt="">
+                           </div>
+                           <h4 class="recommended__slide_title">
+                                 Dude You Re Getting A Telescope
+                           </h4>
+                           <div class="recommended__slide_info">
+                                 <span class="recommended__slide_views">34k views</span>
+                                 <span class="recommended__slide_release">5 months ago</span>
+                                 <span class="recommended__slide_name">Gussie French</span>
+                           </div>
+                     </div>   
+                     <div class="recommended__slide">
+                           <div class="recommended__slide_image">
+                                 <img class="recommended__slide_img" src="assets/images/main/recommended-videos/02.jpg" alt="">
+                           </div>
+                           <h4 class="recommended__slide_title">
+                                 Moon Gazing
+                           </h4>
+                           <div class="recommended__slide_info">
+                                 <span class="recommended__slide_views">54k views</span>
+                                 <span class="recommended__slide_release">2 months ago</span>
+                                 <span class="recommended__slide_name">Edward Osborne</span>
+                           </div>
+                     </div>  
+                     <div class="recommended__slide">
+                           <div class="recommended__slide_image">
+                                 <img class="recommended__slide_img" src="assets/images/main/recommended-videos/03.jpg" alt="">
+                           </div>
+                           <h4 class="recommended__slide_title">
+                                 Moon Gazing
+                           </h4>
+                           <div class="recommended__slide_info">
+                                 <span class="recommended__slide_views">222k views</span>
+                                 <span class="recommended__slide_release">9 months ago</span>
+                                 <span class="recommended__slide_name">Gussie French</span>
+                           </div>
+                     </div>  
+                     <div class="recommended__slide">
+                           <div class="recommended__slide_image">
+                                 <img class="recommended__slide_img" src="assets/images/main/recommended-videos/01.jpg" alt="">
+                           </div>
+                           <h4 class="recommended__slide_title">
+                                 Dude You Re Getting A Telescope
+                           </h4>
+                           <div class="recommended__slide_info">
+                                 <span class="recommended__slide_views">34k views</span>
+                                 <span class="recommended__slide_release">5 months ago</span>
+                                 <span class="recommended__slide_name">Gussie French</span>
+                           </div>
+                     </div>  
+                     <div class="recommended__slide">
+                           <div class="recommended__slide_image">
+                                 <img class="recommended__slide_img" src="assets/images/main/recommended-videos/02.jpg" alt="">
+                           </div>
+                           <h4 class="recommended__slide_title">
+                                 Dude You Re Getting A Telescope
+                           </h4>
+                           <div class="recommended__slide_info">
+                                 <span class="recommended__slide_views">34k views</span>
+                                 <span class="recommended__slide_release">5 months ago</span>
+                                 <span class="recommended__slide_name">Gussie French</span>
+                           </div>
+                     </div>  
+                     <div class="recommended__slide">
+                           <div class="recommended__slide_image">
+                                 <img class="recommended__slide_img" src="assets/images/main/recommended-videos/03.jpg" alt="">
+                           </div>
+                           <h4 class="recommended__slide_title">
+                                 Dude You Re Getting A Telescope
+                           </h4>
+                           <div class="recommended__slide_info">
+                                 <span class="recommended__slide_views">34k views</span>
+                                 <span class="recommended__slide_release">5 months ago</span>
+                                 <span class="recommended__slide_name">Gussie French</span>
+                           </div>
+                     </div>     
+               </div>
+         </div>
+         <div class="recommended-channel">
+               <div class="recommended-channel__head">
+                     <img class="recommended-channel__img" src="assets/images/main/recommended-channel/head-image.png" alt="">
+                     <a class="recommended-channel__link" href="#">
+                           <p class="recommended-channel__name">
+                                 Food & Drink
+                           </p>
+                     </a>
+                     <p class="recommended-channel__text">
+                           Recommended channel for you
+                     </p>
+                     <button class="recommended-channel__btn">
+                           Subscribe 2.3m
+                     </button>
+               </div>
+               
+               <div class="recommended-channel__slider">
+                     <div class="recommended-channel__slide">
+                           <div class="recommended-channel__slide_image">
+                                 <img class="recommended-channel__slide_img" src="assets/images/main/recommended-channel/01.jpg" alt="">
+                           </div>
+                           <h4 class="recommended-channel__slide_title">
+                                 Astronomy Or Astrology
+                           </h4>
+                            <div class="recommended-channel__slide_info">
+                                 <span class="recommended-channel__slide_views">80k views</span>
+                                 <span class="recommended-channel__slide_release">3 days ago</span>
+                                 <span class="recommended-channel__slide_name">Food & Drink</span>
+                           </div>
+                     </div>
+         
+                     <div class="recommended-channel__slide">
+                           <div class="recommended-channel__slide_image">
+                                 <img class="recommended-channel__slide_img" src="assets/images/main/recommended-channel/02.jpg" alt="">
+                           </div>
+                           <h4 class="recommended-channel__slide_title">
+                                 Advertising Outdoors
+                           </h4>
+                            <div class="recommended-channel__slide_info">
+                                 <span class="recommended-channel__slide_views">66k views</span>
+                                 <span class="recommended-channel__slide_release">36 days ago</span>
+                                 <span class="recommended-channel__slide_name">Food & Drink</span>
+                           </div>
+                     </div>
+         
+                     <div class="recommended-channel__slide">
+                           <div class="recommended-channel__slide_image">
+                                 <img class="recommended-channel__slide_img" src="assets/images/main/recommended-channel/03.jpg" alt="">
+                           </div>
+                           <h4 class="recommended-channel__slide_title">
+                                 Radio Astronomy
+                           </h4>
+                            <div class="recommended-channel__slide_info">
+                                 <span class="recommended-channel__slide_views">30k views</span>
+                                 <span class="recommended-channel__slide_release">3 month ago</span>
+                                 <span class="recommended-channel__slide_name">Food & Drink</span>
+                           </div>
+                     </div>
+         
+                     <div class="recommended-channel__slide">
+                           <div class="recommended-channel__slide_image">
+                                 <img class="recommended-channel__slide_img" src="assets/images/main/recommended-channel/01.jpg" alt="">
+                           </div>
+                           <h4 class="recommended-channel__slide_title">
+                                 A Good Autoresponder
+                           </h4>
+                            <div class="recommended-channel__slide_info">
+                                 <span class="recommended-channel__slide_views">8k views</span>
+                                 <span class="recommended-channel__slide_release">11 days ago</span>
+                                 <span class="recommended-channel__slide_name">Food & Drink</span>
+                           </div>
+                     </div>
+         
+                     <div class="recommended-channel__slide">
+                           <div class="recommended-channel__slide_image">
+                                 <img class="recommended-channel__slide_img" src="assets/images/main/recommended-channel/02.jpg" alt="">
+                           </div>
+                           <h4 class="recommended-channel__slide_title">
+                                 Baby Monitor Technology
+                           </h4>
+                            <div class="recommended-channel__slide_info">
+                                 <span class="recommended-channel__slide_views">80k views</span>
+                                 <span class="recommended-channel__slide_release">3 days ago</span>
+                                 <span class="recommended-channel__slide_name">Food & Drink</span>
+                           </div>
+                     </div>
+         
+                     <div class="recommended-channel__slide">
+                           <div class="recommended-channel__slide_image">
+                                 <img class="recommended-channel__slide_img" src="assets/images/main/recommended-channel/03.jpg" alt="">
+                           </div>
+                           <h4 class="recommended-channel__slide_title">
+                                 Asteroids
+                           </h4>
+                            <div class="recommended-channel__slide_info">
+                                 <span class="recommended-channel__slide_views">80k views</span>
+                                 <span class="recommended-channel__slide_release">3 days ago</span>
+                                 <span class="recommended-channel__slide_name">Food & Drink</span>
+                           </div>
+                     </div>
+               </div>
+         </div>
+   </main>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="assets/js/main.min.js"></script>
+   
+   
+   
+   
+</body>
+</html>
